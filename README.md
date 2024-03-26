@@ -6,7 +6,7 @@ sudo apt update
 sudo apt install libopencv-dev
 sudo apt install build-essential
 ```
-通过以上代码实现opencv的安装、基本C++编译器（例如gcc）的安装。
+通过以上代码实现opencv的安装（在本地ubuntu上测试了opencv4.5.4, 4.5.5没问题, 在服务器上测试4.5.3有问题，不确定是环境还是版本问题）、基本C++编译器（例如gcc）的安装。
 
 
 ```bash
