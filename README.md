@@ -16,7 +16,7 @@ mkdir build
 cd build
 cmake .. && make
 ```
-此时在build文件夹内生成可执行文件hello，复制一张样图sample.jpg到build（或者说复制到hello可执行文件）路径下
+此时在build文件夹内生成可执行文件hello，复制一张样图example.jpg到build（或者说复制到hello可执行文件）路径下
 
 ```bash
 ./hello
