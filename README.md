@@ -21,4 +21,9 @@ cmake .. && make
 ```bash
 ./hello
 ```
-此时会打印图片的形状
+此时会打印图片的形状：
+```bash
+kiko@kiko-u:~/Desktop/hello/build$ ./hello
+>>> Hello word
+>>> Image size: 1366x96
+```
