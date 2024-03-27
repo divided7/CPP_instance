@@ -12,12 +12,10 @@ sudo apt install build-essential
 
 ```bash
 cd hello
-rm -rf build
-mkdir build
-cd build
+mkdir build && cd build
 cmake .. && make
 ```
-此时在build文件夹内生成可执行文件hello，复制一张样图example.jpg到build（或者说复制到hello可执行文件）路径下
+此时在build文件夹内生成可执行文件hello,通过`./hello`运行
 
 ```bash
 ./hello
@@ -30,3 +28,18 @@ kiko@kiko-u:~/Desktop/hello/build$ ./hello
 ```
 
 ## OnnxRuntime
+```bash
+cd hello
+mkdir build && cd build
+cmake .. && make
+```
+此时在build文件夹内生成可执行文件onnxruntime_example,通过`./onnxruntime_example`运行
+```bash
+./onnxruntime_example
+```
+
+此时会输出结果：
+```bash
+kiko@kiko-u:~/Desktop/load_onnx/build$ ./onnxruntime_example 
+>>> Model loaded successfully.
+```
