@@ -11,7 +11,7 @@ sudo apt install build-essential
 
 
 ```bash
-cd hello
+cd Opencv
 mkdir build && cd build
 cmake .. && make
 ```
@@ -29,7 +29,7 @@ kiko@kiko-u:~/Desktop/hello/build$ ./hello
 
 ## OnnxRuntime
 ```bash
-cd hello
+cd load_onnx
 mkdir build && cd build
 cmake .. && make
 ```
