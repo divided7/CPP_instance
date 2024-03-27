@@ -27,7 +27,7 @@ kiko@kiko-u:~/Desktop/hello/build$ ./hello
 >>> Image size: 1366x96
 ```
 
-## OnnxRuntime
+## OnnxRuntime Load model
 ```bash
 cd load_onnx
 mkdir build && cd build
@@ -43,3 +43,30 @@ cmake .. && make
 kiko@kiko-u:~/Desktop/load_onnx/build$ ./onnxruntime_example 
 >>> Model loaded successfully.
 ```
+
+## OnnxRuntime ImageNet预训练的Resnet18.onnx模型推理
+```bash
+cd infer_onnx
+mkdir build && cd build
+cmake .. && make
+```
+
+此时在build文件夹内生成可执行文件onnxruntime_example,通过`./onnxruntime_example`运行
+```bash
+./onnxruntime_example
+```
+
+此时会输出结果：
+```bash
+>>> Model loaded successfully.
+>>> Number of input nodes: 1
+>>> Number of output nodes: 1
+>>> 输入节点名称:input.1
+>>> 输入节点shape:1 3 224 224 
+>>> 输出节点名称:191
+>>> 输出节点shape:1 1000 
+>>> ...
+>>> ...
+>>> result: cls_idx=817, confidence=12.453, classes:sports car
+```
+该模型暂未使用softmax对类别进行logit操作所以给出的置信度不是真正意义的置信度，但用于分类已够用。
