@@ -1,3 +1,0 @@
-/home/kiko/Desktop/hello/build/CMakeFiles/hello.dir
-/home/kiko/Desktop/hello/build/CMakeFiles/edit_cache.dir
-/home/kiko/Desktop/hello/build/CMakeFiles/rebuild_cache.dir
