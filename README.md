@@ -70,3 +70,17 @@ cmake .. && make
 >>> result: cls_idx=817, confidence=12.453, classes:sports car
 ```
 该模型暂未使用softmax对类别进行logit操作所以给出的置信度不是真正意义的置信度，但用于分类已够用。
+
+##YOLOv8 Onnxruntime
+```bash
+cd YOLOv8-ONNXRuntime-CPP
+mkdir build && cd build
+cmake .. && make
+```
+这里如果只是报warning可以忽略；此时生成可执行文件：`Yolov8OnnxRuntimeCPPInference`
+
+注：此代码相较于原yolov8项目修改了cmakelists，并将main.cpp中的模式由分类改为了检测；编译完成后在build文件夹内会有image文件夹，将图片放入image文件夹下，再执行代码：
+```bash
+./Yolov8OnnxRuntimeCPPInference
+```
+在有GUI界面的ubuntu下会直接弹出检测结果的图片窗口
