@@ -83,4 +83,4 @@ cmake .. && make
 ```bash
 ./Yolov8OnnxRuntimeCPPInference
 ```
-在有GUI界面的ubuntu下会直接弹出检测结果的图片窗口
+在有GUI界面的ubuntu下会直接弹出检测结果的图片窗口。其实这里给出的图片框并不准确，查阅issues应该是库不兼容的问题，可能需要检查一下box相关的代码或者更换库版本尝试，不过本项目主要以跑通各种模型为准，后续再修复该bug。
