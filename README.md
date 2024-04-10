@@ -71,7 +71,7 @@ cmake .. && make
 ```
 该模型暂未使用softmax对类别进行logit操作所以给出的置信度不是真正意义的置信度，但用于分类已够用。
 
-##YOLOv8 Onnxruntime
+## YOLOv8 Onnxruntime
 ```bash
 cd YOLOv8-ONNXRuntime-CPP
 mkdir build && cd build
