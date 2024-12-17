@@ -9,6 +9,24 @@ sudo apt install build-essential
 ```
 通过以上代码实现opencv的安装（在本地ubuntu上测试了opencv4.5.4, 4.5.5没问题, 在服务器上测试4.5.3有问题，不确定是环境还是版本问题）、基本C++编译器（例如gcc）的安装。
 
+或者尝试源码安装:
+
+https://opencv.org/releases/
+
+<img width="816" alt="image" src="https://github.com/user-attachments/assets/d160a439-299b-4e1e-bdfb-aa080e5abc88" />
+
+```bash
+unzip opencv-4.10.0.zip
+cd opencv-4.10.0
+mkdir build
+cd build
+cmake ..
+```
+
+---
+
+安装好opencv后:
+
 
 ```bash
 cd Opencv
