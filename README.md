@@ -21,6 +21,7 @@ cd opencv-4.10.0
 mkdir build
 cd build
 cmake ..
+make -j$(sysctl -n hw.ncpu) # 用多线程make快一点 macos
 ```
 
 ---
