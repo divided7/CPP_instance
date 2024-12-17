@@ -22,6 +22,7 @@ mkdir build
 cd build
 cmake ..
 make -j$(sysctl -n hw.ncpu) # 用多线程make快一点 macos
+sudo make install
 ```
 
 ---
