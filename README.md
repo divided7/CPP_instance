@@ -48,6 +48,8 @@ kiko@kiko-u:~/Desktop/hello/build$ ./hello
 ```
 
 ## OnnxRuntime Load model
+onnx下载参考: https://github.com/microsoft/onnxruntime/releases
+
 ```bash
 cd load_onnx
 mkdir build && cd build
